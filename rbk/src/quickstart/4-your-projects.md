@@ -15,7 +15,7 @@ printed — that came from the script. It also defined a greet() function.
 Call it now:
 
 ```bash
-greet yourname
+greet <name>
 ```
 
 The [script] block is sourced into your shell at startup so anything

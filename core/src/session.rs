@@ -62,17 +62,17 @@ impl Session {
     /// Writes init_script + inline [script] block to a temp file and returns its path.
     /// Returns None when there is nothing to initialise.
     pub fn build_init_file(&self) -> Option<PathBuf> {
-        let mut lines = Vec::new();
+        let has_init = self.init_script.is_some() || self.script_body.is_some();
+        if !has_init {
+            return None;
+        }
+        let mut lines = vec!["clear".to_string()];
         if let Some(ref path) = self.init_script {
             lines.push(format!("source {path}"));
         }
         if let Some(ref body) = self.script_body {
             lines.push(body.clone());
         }
-        if lines.is_empty() {
-            return None;
-        }
-        lines.push("clear".to_string());
         let tmp = std::env::temp_dir().join(format!("rbk_{}.sh", self.name));
         std::fs::write(&tmp, lines.join("\n")).ok()?;
         Some(tmp)

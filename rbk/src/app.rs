@@ -558,11 +558,11 @@ fn handle_projects_key(app: &mut App, key: KeyEvent) -> InputResult {
             }
             InputResult::Consumed
         }
-        KeyCode::Up | KeyCode::Char('k') => {
+        KeyCode::Up => {
             app.select_prev_project();
             InputResult::Consumed
         }
-        KeyCode::Down | KeyCode::Char('j') => {
+        KeyCode::Down => {
             app.select_next_project();
             InputResult::Consumed
         }
@@ -601,11 +601,11 @@ fn handle_notes_key(app: &mut App, key: KeyEvent) -> InputResult {
             }
             InputResult::Consumed
         }
-        KeyCode::Up | KeyCode::Char('k') => {
+        KeyCode::Up => {
             app.select_prev_note();
             InputResult::Consumed
         }
-        KeyCode::Down | KeyCode::Char('j') => {
+        KeyCode::Down => {
             app.select_next_note();
             InputResult::Consumed
         }
@@ -659,11 +659,11 @@ fn handle_note_content_key(app: &mut App, key: KeyEvent) -> InputResult {
             app.sidebar_level = SidebarLevel::Notes;
             InputResult::Consumed
         }
-        KeyCode::Up | KeyCode::Char('k') => {
+        KeyCode::Up => {
             app.prev_block();
             InputResult::Consumed
         }
-        KeyCode::Down | KeyCode::Char('j') => {
+        KeyCode::Down => {
             app.next_block();
             InputResult::Consumed
         }
@@ -748,11 +748,11 @@ fn handle_notes_panel_key(app: &mut App, key: KeyEvent) -> InputResult {
             app.open_notes_browser();
             InputResult::Consumed
         }
-        KeyCode::Up | KeyCode::Char('k') => {
+        KeyCode::Up => {
             app.prev_block();
             InputResult::Consumed
         }
-        KeyCode::Down | KeyCode::Char('j') => {
+        KeyCode::Down => {
             app.next_block();
             InputResult::Consumed
         }
