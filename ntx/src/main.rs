@@ -245,6 +245,11 @@ fn first_run() {
     for (filename, content) in QUICKSTART_NOTES {
         let _ = std::fs::write(notes_dir.join(filename), content);
     }
+
+    let _ = std::fs::write(
+        paths::conf_dir(project).join("default.conf"),
+        include_str!("quickstart/default.conf"),
+    );
 }
 
 const QUICKSTART_NOTES: &[(&str, &str)] = &[

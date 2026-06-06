@@ -60,7 +60,7 @@ nvm use 20
 | `dir` | Working directory for the terminal |
 | `shell` | Shell binary (defaults to `$SHELL`) |
 | `[env]` | Environment variables injected into the session |
-| `[script]` | Commands run automatically when the terminal starts |
+| `[script]` | Sourced into the shell on startup — run commands or define functions available for the session |
 
 ### Note format
 

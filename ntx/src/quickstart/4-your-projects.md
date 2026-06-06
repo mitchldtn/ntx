@@ -6,35 +6,25 @@ tags: [quickstart]
 # Your Projects
 
 Projects live in ~/.ntx/projects/. Each one has a config file that
-sets the working directory, shell, env vars, and a startup script.
+sets the working directory, env vars, and a startup script.
 
-Create a project from the browser with `n`, then add a config file at:
+This quickstart project already has a config with a [script] block.
+When you opened this terminal you should have seen "ntx quickstart ready"
+printed — that came from the script. It also defined a greet() function.
 
-  ~/.ntx/projects/<project>/config/default.conf
-
-Example config:
-
-  dir = ~/dev/my-project
-  shell = /bin/zsh
-
-  [env]
-  NODE_ENV = development
-
-  [script]
-  echo "ready"
-
-Notes go in:
-
-  ~/.ntx/projects/<project>/notes/
-
-Check where your projects are stored.
+Call it now:
 
 ```bash
-ls ~/.ntx/projects/
+greet yourname
 ```
 
-See what's in this quickstart project.
+The [script] block is sourced into your shell at startup so anything
+you define there — functions, aliases, exports — is available for the
+whole session. Good for project-specific helpers like log tailing,
+deploy shortcuts, or kubectl wrappers.
+
+See the config for this project:
 
 ```bash
-ls ~/.ntx/projects/quickstart/
+cat ~/.ntx/projects/quickstart/config/default.conf
 ```
