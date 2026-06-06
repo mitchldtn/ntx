@@ -1,6 +1,6 @@
 # rbk
 
-A terminal with a notes sidebar. Keep runnable command snippets in markdown notes and execute them directly into your shell — without leaving the terminal.
+A terminal with a runbook sidebar. Keep runnable command snippets in markdown and execute them directly into your shell without leaving the terminal.
 
 ![demo](demo.gif)
 
