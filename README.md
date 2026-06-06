@@ -1,4 +1,4 @@
-# ntx
+# rbk
 
 A terminal with a notes sidebar. Keep runnable command snippets in markdown notes and execute them directly into your shell — without leaving the terminal.
 
@@ -6,32 +6,32 @@ A terminal with a notes sidebar. Keep runnable command snippets in markdown note
 
 ```bash
 brew tap mitchldtn/tap
-brew install ntx
+brew install rbk
 ```
 
 Or build from source (requires Rust 1.75+):
 
 ```bash
-git clone https://github.com/mitchldtn/ntx
-cd ntx
-cargo build --release --manifest-path ntx/Cargo.toml
+git clone https://github.com/mitchldtn/rbk
+cd rbk
+cargo build --release --manifest-path rbk/Cargo.toml
 ```
 
 ## Usage
 
 ```bash
-ntx                  # open project browser
-ntx <project>        # open a project directly
+rbk                  # open project browser
+rbk <project>        # open a project directly
 ```
 
-On first run, a `quickstart` project is created at `~/.ntx/projects/quickstart/` with getting-started notes.
+On first run, a `quickstart` project is created at `~/.rbk/projects/quickstart/` with getting-started notes.
 
 ## Project Structure
 
-Projects live in `~/.ntx/projects/`:
+Projects live in `~/.rbk/projects/`:
 
 ```
-~/.ntx/projects/
+~/.rbk/projects/
 └── my-project/
     ├── config/
     │   └── default.conf

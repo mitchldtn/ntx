@@ -1,8 +1,8 @@
-use ntx_core::session::Session;
+use rbk_core::session::Session;
 
 use crate::paths;
 
-/// Load project config from ~/.ntx/projects/<project>/config/.
+/// Load project config from ~/.rbk/projects/<project>/config/.
 /// Uses the first .conf found, or writes a default if none exists.
 pub fn load(project: &str) -> Session {
     let dir = paths::conf_dir(project);

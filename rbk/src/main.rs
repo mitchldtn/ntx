@@ -25,8 +25,8 @@ fn main() -> Result<()> {
         2 => run(App::new_in_project(&args[1])),
         _ => {
             eprintln!("Usage:");
-            eprintln!("  ntx                  Project browser");
-            eprintln!("  ntx <project>        Open project directly");
+            eprintln!("  rbk                  Project browser");
+            eprintln!("  rbk <project>        Open project directly");
             Ok(())
         }
     }

@@ -640,32 +640,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "ntx"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "arboard",
- "chrono",
- "crossterm",
- "dirs",
- "ntx-core",
- "ratatui",
- "vt100",
-]
-
-[[package]]
-name = "ntx-core"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "chrono",
- "dirs",
- "portable-pty",
- "serde",
- "vt100",
-]
-
-[[package]]
 name = "num-traits"
 version = "0.2.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -889,6 +863,32 @@ dependencies = [
  "unicode-segmentation",
  "unicode-truncate",
  "unicode-width 0.2.0",
+]
+
+[[package]]
+name = "rbk"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "arboard",
+ "chrono",
+ "crossterm",
+ "dirs",
+ "ratatui",
+ "rbk-core",
+ "vt100",
+]
+
+[[package]]
+name = "rbk-core"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "chrono",
+ "dirs",
+ "portable-pty",
+ "serde",
+ "vt100",
 ]
 
 [[package]]

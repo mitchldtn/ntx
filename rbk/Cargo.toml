@@ -1,16 +1,16 @@
 [package]
-name = "ntx"
+name = "rbk"
 description = "Notes terminal — project notes with an integrated shell"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
 
 [[bin]]
-name = "ntx"
+name = "rbk"
 path = "src/main.rs"
 
 [dependencies]
-ntx-core = { path = "../core" }
+rbk-core = { path = "../core" }
 anyhow.workspace = true
 crossterm = "0.28"
 ratatui = "0.29"

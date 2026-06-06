@@ -3,7 +3,7 @@ use std::path::PathBuf;
 pub fn base_dir() -> PathBuf {
     dirs::home_dir()
         .unwrap_or_else(|| PathBuf::from("/"))
-        .join(".ntx")
+        .join(".rbk")
 }
 
 pub fn projects_dir() -> PathBuf {

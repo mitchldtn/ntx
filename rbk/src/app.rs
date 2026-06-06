@@ -1,5 +1,5 @@
-use ntx_core::notes::{load_notes_from_dir, Note};
-use ntx_core::terminal::Terminal;
+use rbk_core::notes::{load_notes_from_dir, Note};
+use rbk_core::terminal::Terminal;
 use crossterm::event::{KeyCode, KeyEvent, KeyModifiers, MouseEvent, MouseEventKind};
 
 use crate::{config, paths};

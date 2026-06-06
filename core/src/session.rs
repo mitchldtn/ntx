@@ -73,7 +73,7 @@ impl Session {
             return None;
         }
         lines.push("clear".to_string());
-        let tmp = std::env::temp_dir().join(format!("ntx_{}.sh", self.name));
+        let tmp = std::env::temp_dir().join(format!("rbk_{}.sh", self.name));
         std::fs::write(&tmp, lines.join("\n")).ok()?;
         Some(tmp)
     }

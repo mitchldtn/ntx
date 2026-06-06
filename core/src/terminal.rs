@@ -161,7 +161,7 @@ fn setup_shell_init(session: &Session, cmd: &mut CommandBuilder) {
         None => return,
     };
     let shell = session.shell_bin();
-    let rc_dir = std::env::temp_dir().join(format!("ntx_rc_{}", session.name));
+    let rc_dir = std::env::temp_dir().join(format!("rbk_rc_{}", session.name));
     let _ = fs::create_dir_all(&rc_dir);
 
     let home = dirs::home_dir().unwrap_or_else(|| PathBuf::from("/"));

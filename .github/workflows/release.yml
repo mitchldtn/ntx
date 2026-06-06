@@ -29,14 +29,14 @@ jobs:
           targets: ${{ matrix.target }}
 
       - name: Build
-        run: cargo build --release --target ${{ matrix.target }} -p ntx
+        run: cargo build --release --target ${{ matrix.target }} -p rbk
 
       - name: Package
         run: |
-          tar czf ntx-${{ matrix.target }}.tar.gz \
-            -C target/${{ matrix.target }}/release ntx
+          tar czf rbk-${{ matrix.target }}.tar.gz \
+            -C target/${{ matrix.target }}/release rbk
 
       - name: Upload to release
         uses: softprops/action-gh-release@v2
         with:
-          files: ntx-${{ matrix.target }}.tar.gz
+          files: rbk-${{ matrix.target }}.tar.gz

@@ -72,7 +72,7 @@ fn render_normal(frame: &mut Frame, app: &mut App, area: Rect) {
 /// Full-screen project list (no terminal behind it yet).
 fn render_projects_screen(frame: &mut Frame, app: &App, area: Rect) {
     let block = Block::default()
-        .title(" ntx ")
+        .title(" rbk ")
         .borders(Borders::ALL)
         .border_style(Style::default().fg(Color::Cyan));
     let inner = block.inner(area);
@@ -481,7 +481,7 @@ fn render_status_bar(frame: &mut Frame, app: &App, area: Rect) {
         ])
     } else {
         let project = if app.current_project.is_empty() {
-            "ntx".to_string()
+            "rbk".to_string()
         } else {
             app.current_project.clone()
         };

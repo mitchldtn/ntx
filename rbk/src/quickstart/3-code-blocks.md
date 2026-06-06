@@ -22,9 +22,9 @@ echo "user:  $USER"
 echo "home:  $HOME"
 ```
 
-Blocks can also use variables — wrap them in angle brackets and ntx
+Blocks can also use variables — wrap them in angle brackets and rbk
 will prompt you to fill them in before running.
 
 ```bash
-echo "hello <name>, welcome to ntx"
+echo "hello <name>, welcome to rbk"
 ```
